@@ -59,8 +59,8 @@ test('wrong password',async ({page})=>{
 test('login success',async ({page})=>{
     await page.goto('https://soften-front.vercel.app/Login');
 
-    await page.locator('#username').fill('');
-    await page.locator('#password').fill('');
+    await page.locator('#username').fill('tester');
+    await page.locator('#password').fill('123456');
 
     await page.click('button:has-text("Login")');
 
